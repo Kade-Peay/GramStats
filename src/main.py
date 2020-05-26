@@ -17,7 +17,7 @@ def scrape_data(username):
     return parse_data(meta.attrs['content'])
 
 if __name__ == "__main__":
-    username = 'lillian_mcpherron'
+    username = input('Enter username: ')
     data = scrape_data(username)
     print('------------------\n')
     print(f'Showing account info for {username}\n')

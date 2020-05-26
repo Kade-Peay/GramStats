@@ -17,8 +17,11 @@ def scrape_data(username):
     return parse_data(meta.attrs['content'])
 
 if __name__ == "__main__":
-    username = 'icarus_950'
+    username = 'lillian_mcpherron'
     data = scrape_data(username)
+    print('------------------\n')
+    print(f'Showing account info for {username}\n')
+    print('------------------\n')
+    print("This accoutn has ", data['Posts'], "posts")
     print("This accoutn has ", data['Followers'], "followers")
     print("This accoutn has ", data['Following'], "following")
-    print("This accoutn has ", data['Posts'], "posts")
